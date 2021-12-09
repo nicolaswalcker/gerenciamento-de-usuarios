@@ -11,6 +11,10 @@
   src: url("./fonts/HelveticaNeue-Medium.otf") format("opentype"),
     url("./fonts/HelveticaNeue-Medium.ttf") format("truetype");
 }
+body,
+html {
+  background-color: $gray;
+}
 body {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -20,11 +24,9 @@ h1 {
   font-style: normal;
   font-weight: normal;
 }
-main {
-  padding-top: 70px;
-}
 .l-header {
-  position: fixed;
+  position: sticky;
+  top: -1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +43,6 @@ main {
     height: 100vh;
   }
   height: 100%;
-  background-color: $gray;
 }
 .c-form__title {
   align-self: center;

@@ -1,0 +1,81 @@
+.l-list__main {
+  width: 100%;
+  height: 100vh;
+  padding: 0 1rem;
+  @include breakpoint(medium-up) {
+    height: auto;
+    padding: 0 4rem;
+  }
+
+  .c-section__title {
+    display: inline-block;
+    margin: 1.5rem 0 0 0;
+    font-weight: bold;
+    color: $primary;
+    text-align: center;
+    @include breakpoint(small-up) {
+      text-align: left;
+    }
+  }
+  .l-cards__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+    overflow-x: auto;
+    gap: 1rem;
+    @include breakpoint(medium-up) {
+      display: grid;
+      justify-content: center;
+      width: 100%;
+      height: 90%;
+      padding: 2rem 0;
+      margin: 0 auto;
+      margin-top: 0;
+      overflow: hidden;
+      grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+      grid-template-rows: repeat(2, minmax(300px, 1fr));
+      gap: 3rem;
+      justify-items: center;
+    }
+  }
+  .c-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem 3rem;
+    background-color: $white;
+    border-radius: 0.5rem;
+  }
+  .c-edit {
+    align-self: flex-end;
+  }
+  .c-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  .c-card__img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .c-card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary;
+    text-transform: capitalize;
+  }
+  .c-card__email {
+    font-size: 1rem;
+    color: $dark;
+  }
+}
