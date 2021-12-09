@@ -1,0 +1,185 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/HelveticaNeue-Medium.otf") format("opentype"),
+    url("./fonts/HelveticaNeue-Medium.ttf") format("truetype");
+}
+
+.l-header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: #174dba;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+h1 {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: normal;
+}
+
+main {
+  padding-top: 70px;
+}
+
+.l-index__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #eff0f3;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+.c-form__area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  align-items: center;
+  justify-content: center;
+  min-width: 25%;
+  height: 60%;
+  padding: 1.5rem 2rem 4rem 2rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  gap: 1rem;
+}
+
+@media (max-width: 37.4375em) {
+  .c-form__area {
+    height: 75%;
+  }
+}
+
+.c-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  -webkit-box-align: start;
+  -webkit-box-pack: justify;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+@media (min-width: 56.25em) {
+  .c-login {
+    width: 80%;
+  }
+}
+
+.c-form__title {
+  align-self: center;
+  margin-bottom: 1rem;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: medium;
+  color: #174dba;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+}
+
+.c-form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: start;
+  -webkit-box-pack: justify;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  gap: 0.25rem;
+}
+
+.c-form-group__label {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #174dba;
+}
+
+.c-form-group__input {
+  width: 100%;
+  height: 2.75rem;
+  padding: 0.75rem 0.5rem;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  border: 1px solid #505050;
+  border-radius: 0.5rem;
+}
+
+.c-login__submit {
+  width: 100%;
+  height: 2.75rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #174dba;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.c-login__submit:hover {
+  -webkit-filter: brightness(1.5);
+  filter: brightness(1.5);
+}
+
+.c-have-account {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #505050;
+}
+
+.c-link {
+  color: #174dba;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

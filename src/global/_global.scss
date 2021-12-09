@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/HelveticaNeue-Medium.otf") format("opentype"),
+    url("./fonts/HelveticaNeue-Medium.ttf") format("truetype");
+}
+.l-header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: $primary;
+}
+h1 {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: normal;
+}
+main {
+  padding-top: 70px;
+}
