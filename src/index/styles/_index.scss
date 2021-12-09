@@ -1,90 +1,45 @@
 .l-index__main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: $gray;
-}
-.c-form__area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 25%;
-  height: 60%;
-  padding: 1.5rem 2rem 4rem 2rem;
-  background-color: $white;
-  border-radius: 0.5rem;
-  gap: 1rem;
-  @include breakpoint(small-only) {
-    height: 75%;
+  .c-form__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 25%;
+    height: 60%;
+    padding: 1.5rem 2rem 4rem 2rem;
+    background-color: $white;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    @include breakpoint(small-only) {
+      height: 75%;
+    }
   }
-}
-.c-login {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-  @include breakpoint(medium-up) {
-    width: 80%;
+  .c-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    @include breakpoint(medium-up) {
+      width: 80%;
+    }
   }
-}
-.c-form__title {
-  align-self: center;
-  margin-bottom: 1rem;
-  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-  font-size: 1.75rem;
-  font-weight: medium;
-  color: $primary;
-}
-.c-form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-  gap: 0.25rem;
-}
-.c-form-group__label {
-  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: $primary;
-}
-.c-form-group__input {
-  width: 100%;
-  height: 2.75rem;
-  padding: 0.75rem 0.5rem;
-  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-  border: 1px solid $dark;
-  border-radius: 0.5rem;
-}
-.c-login__submit {
-  width: 100%;
-  height: 2.75rem;
-  margin-top: 2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: $white;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: $primary;
-  border: none;
-  border-radius: 0.5rem;
-  transition: all 0.2s ease-in;
-  &:hover {
-    filter: brightness(1.5);
+  .c-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.25rem;
   }
-}
-.c-have-account {
-  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-  font-size: 0.9rem;
-  font-weight: normal;
-  color: $dark;
-}
-.c-link {
-  color: $primary;
-  text-decoration: none;
+  .c-form-group__input {
+    width: 100%;
+    height: 2.75rem;
+    padding: 0.75rem 0.5rem;
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    border: 1px solid $dark;
+    border-radius: 0.5rem;
+  }
 }

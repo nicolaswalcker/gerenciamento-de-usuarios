@@ -11,6 +11,18 @@
   src: url("./fonts/HelveticaNeue-Medium.otf") format("opentype"),
     url("./fonts/HelveticaNeue-Medium.ttf") format("truetype");
 }
+body {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+h1 {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+main {
+  padding-top: 70px;
+}
 .l-header {
   position: fixed;
   display: flex;
@@ -20,11 +32,54 @@
   height: 70px;
   background-color: $primary;
 }
-h1 {
-  font-family: "HelveticaNeue";
-  font-style: normal;
-  font-weight: normal;
+.l-index__main,
+.l-register__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include breakpoint(small-up) {
+    height: 100vh;
+  }
+  height: 100%;
+  background-color: $gray;
 }
-main {
-  padding-top: 70px;
+.c-form__title {
+  align-self: center;
+  margin-bottom: 1rem;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: medium;
+  color: $primary;
+}
+.c-form-group__label {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: $primary;
+}
+.c-link {
+  color: $primary;
+  text-decoration: none;
+}
+.c-button {
+  width: 100%;
+  height: 2.75rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $primary;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in;
+  &:hover {
+    filter: brightness(1.5);
+  }
+}
+.c-form__link {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: $dark;
 }

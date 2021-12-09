@@ -84,14 +84,14 @@
     </header>
     <main class="l-index__main">
       <section class="c-form__area">
-        <form action="#" class="c-login">
+        <form action="#" class="c-login js-login-form">
           <h1 class="c-form__title">Acessar</h1>
           <div class="c-form-group">
             <label for="email" class="c-form-group__label">E-mail</label>
             <input
               type="email"
               id="email"
-              class="c-form-group__input"
+              class="c-form-group__input js-email"
               placeholder="E-mail"
             />
           </div>
@@ -100,15 +100,16 @@
             <input
               type="password"
               id="password"
-              class="c-form-group__input"
+              class="c-form-group__input js-password"
               placeholder="Senha"
             />
           </div>
-          <button class="c-login__submit" type="submit">Entrar</button>
+          <button class="c-button js-submit" type="submit">Entrar</button>
         </form>
-        <p class="c-have-account">Não possui conta? <a class="c-link" href="./pages/cadastro.html">Cadastre-se aqui</a></p>
+        <p class="c-form__link">Não possui conta? <a class="c-link" href="./pages/cadastro.html">Cadastre-se aqui</a></p>
       </section>
     </main>
+    <script type="module" src="./src/index/js/login-auth.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

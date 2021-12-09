@@ -1,0 +1,100 @@
+.l-register__main {
+  .c-form__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
+    min-height: 80%;
+    padding: 1.5rem 3rem 2rem;
+    background-color: $white;
+    border-radius: 0.5rem;
+    @include breakpoint(small-up) {
+      min-width: 45%;
+      min-height: 40%;
+    }
+  }
+  .c-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .c-form__layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    @include breakpoint(small-up) {
+      display: grid;
+      padding: 1rem;
+      column-gap: 1.5rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "name email"
+        "state gender"
+        "password confirm";
+    }
+  }
+  .c-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 0.25rem;
+  }
+  .c-radio {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+  }
+  .c-radio__area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 55%;
+    gap: 1.5rem;
+  }
+  .c-form-group__input,
+  .c-select {
+    width: 100%;
+    height: 3rem;
+    padding: 0.25rem;
+    background-color: $white;
+    border: 1px solid $dark;
+    border-radius: 0.5rem;
+  }
+  .c-form-group__radio {
+    width: 20px;
+    height: 20px;
+  }
+  .c-radio__label {
+    font-size: 0.875rem;
+    font-weight: thin;
+    color: $dark;
+  }
+  .c-radio__group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .c-warning {
+    color: $dark;
+    opacity: 0.6;
+  }
+  .c-button {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+}
