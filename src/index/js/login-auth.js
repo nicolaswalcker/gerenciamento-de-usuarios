@@ -1,8 +1,7 @@
+import listaPessoas from "../../cadastro/js/savePerson";
 const email = document.querySelector(".js-email");
 const password = document.querySelector(".js-password");
-const loginButton = document.querySelector(".js-submit");
 const form = document.querySelector(".js-login-form");
-/* import listaPessoas from "../../cadastro/js/register.js";
 
 const verifica = () => {
   for (let i = 0; i < listaPessoas.length; i++) {
@@ -11,7 +10,7 @@ const verifica = () => {
       listaPessoas[i].password === password.value
     ) {
       return true;
-    } else return false;
+    }
   }
 };
 
@@ -19,7 +18,8 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (verifica()) {
     alert("Login efetuado com sucesso!");
+    window.location.href = "../../../pages/lista-usuarios.html";
   } else {
     alert("Login ou senha incorretos!");
   }
-}); */
+});

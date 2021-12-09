@@ -85,7 +85,7 @@
     <main class="l-register__main">
       <section class="c-form__area">
         <h1 class="c-form__title">Cadastro</h1>
-        <form action="#" class="c-register js-register-form">
+        <form action="#" class="c-register js-register" id="js-register">
           <div class="c-form__layout">
             <div class="c-form-group u-name">
               <label for="fullname" class="c-form-group__label"
@@ -96,11 +96,12 @@
                 id="fullname"
                 class="c-form-group__input js-fullname"
                 placeholder="Nome completo"
+                required
               />
             </div>
             <div class="c-form-group u-state">
               <label for="state" class="c-form-group__label">Estado</label>
-              <select class="c-select" id="estado" name="estado">
+              <select  required class="c-select" id="estado" name="estado">
                 <option value="" disabled selected>Selecione</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -137,8 +138,9 @@
               <input
                 type="email"
                 id="email"
-                class="c-form-group__input js-email"
+                class="c-form-group__input js-register-email"
                 placeholder="E-mail"
+                required
               />
             </div>
             <div class="c-form-group u-password">
@@ -148,6 +150,8 @@
                 id="password"
                 class="c-form-group__input js-password"
                 placeholder="Senha"
+                minlength="6"
+                required
               />
               <small class="c-warning"
                 >A senha deve ter no mínimo 6 caracteres</small
@@ -159,9 +163,10 @@
               >
               <input
                 type="password"
-                id="password-confirm"
-                class="c-form-group__input js-password"
+                class="c-form-group__input js-password-confirm"
                 placeholder="Confirmar senha"
+                minlength="6"
+                required
               />
             </div>
             <div class="c-radio u-gender">
@@ -174,6 +179,7 @@
                     id="feminino"
                     class="c-form-group__radio js-gender"
                     placeholder="Sexo"
+                    required
                   />
                   <label for="feminino" class="c-radio__label">Feminino</label>
                 </div>
@@ -203,7 +209,7 @@
             </div>
 
           </div>
-          <button class="c-button js-submit" type="submit">
+          <button class="c-button js-submit-button" type="submit">
             Cadastrar
           </button>
         </form>
@@ -213,5 +219,7 @@
         </p>
       </section>
     </main>
+    <script type="module" src="../src/cadastro/js/register.js"></script>
+    <script type="module" src="../main.js"></script>
   </body>
 </html>
