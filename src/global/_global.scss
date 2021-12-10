@@ -14,6 +14,7 @@
 body,
 html {
   background-color: $gray;
+  height: 100%;
 }
 body {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
@@ -34,15 +35,24 @@ h1 {
   height: 70px;
   background-color: $primary;
 }
-.l-index__main,
+.l-index__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include breakpoint(small-up) {
+    height: calc(100% - 70px);
+  }
+  height: 100%;
+}
 .l-register__main {
   display: flex;
   align-items: center;
   justify-content: center;
   @include breakpoint(small-up) {
-    height: 100vh;
+    height: 100%;
+    margin-top: 0;
   }
-  height: 100%;
+  margin-top: 5%;
 }
 .c-form__title {
   align-self: center;

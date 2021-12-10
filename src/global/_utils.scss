@@ -16,3 +16,9 @@
 .u-confirm-password {
   grid-area: confirm;
 }
+.u-margin-bottom {
+  margin-bottom: 1rem;
+  @include breakpoint(small-up) {
+    margin-bottom: 0.5rem;
+  }
+}
