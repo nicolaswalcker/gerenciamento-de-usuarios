@@ -37,8 +37,6 @@
   <a href="#rocket-technologies">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requisitos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Iniciando</a>
-
-
 </p>
 
 <br>
