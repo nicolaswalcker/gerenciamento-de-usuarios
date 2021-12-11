@@ -4,13 +4,16 @@ const showMore = document.querySelector(".js-show");
 var actualNumber = document.querySelector(".js-actual-number");
 const url = `https://reqres.in/api/users?page=1`;
 const url2 = `https://reqres.in/api/users?page=2`;
+const totalUsers = document.querySelector(".js-total");
 let isShowingMore = false;
 let numberOfUsers = 0;
+actualNumber.innerHTML = numberOfUsers;
 const fetch = (url) => {
   axios
     .get(url)
     .then((response) => {
       const data = response.data.data;
+      const apiTotalUsers = response.data.total;
       data.forEach((user) => {
         const {
           email: userEmail,
@@ -35,6 +38,7 @@ const fetch = (url) => {
         </div>
       </div>
         `;
+        totalUsers.innerHTML = apiTotalUsers;
         numberOfUsers++;
         actualNumber.textContent = numberOfUsers;
         container.innerHTML += personCard;
@@ -44,7 +48,6 @@ const fetch = (url) => {
       console.log(error);
     });
 };
-
 fetch(url);
 showMore.addEventListener("click", (e) => {
   container.classList.add("u-showing-more");

@@ -1,0 +1,13 @@
+@mixin required {
+  &::before {
+    position: absolute;
+    content: "*";
+    color: red;
+    left: 100%;
+    top: 50%;
+    font-size: 1rem;
+    margin-left: 0.25rem;
+    transform: translate(0%, -50%);
+    z-index: 1;
+  }
+}

@@ -45,6 +45,7 @@ h1 {
   width: 100%;
   height: 70px;
   background-color: #174dba;
+  z-index: 20;
 }
 
 .l-index__main {
@@ -101,6 +102,7 @@ h1 {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #174dba;
+  position: relative;
 }
 
 .c-link {
@@ -567,6 +569,19 @@ h1 {
 .l-register__main .c-form-group__radio {
   width: 20px;
   height: 20px;
+}
+
+.l-register__main .c-form-group__label::before {
+  position: absolute;
+  content: "*";
+  color: red;
+  left: 100%;
+  top: 50%;
+  font-size: 1rem;
+  margin-left: 0.25rem;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  z-index: 1;
 }
 
 .l-register__main .c-radio__label {
